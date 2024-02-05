@@ -1,5 +1,6 @@
 export interface Template {
   url: string;
+  id: string;
   description: string[];
   company: string;
   role: string;
@@ -7,7 +8,8 @@ export interface Template {
 }
 
 const stegAi: Template = {
-  url: "/experience",
+  url: "/experience#steg-ai",
+  id: "steg-ai",
   company: "Steg.AI",
   year: "Jan 2023 - Current",
   role: "Full Stack Software Engineer & Product Designer",
@@ -20,7 +22,8 @@ const stegAi: Template = {
   ],
 };
 const strongarmTechnologies: Template = {
-  url: "/experience",
+  url: "/experience#strongarm-technologies",
+  id: "strongarm-technologies",
   company: "StrongArm Technologies",
   year: "Mar 2022 - Nov 2022",
   role: "Software Engineer",
@@ -33,7 +36,8 @@ const strongarmTechnologies: Template = {
   ],
 };
 const decoded: Template = {
-  url: "/experience",
+  url: "/experience#decoded",
+  id: "decoded",
   company: "Decoded",
   year: "Jun 2021 - Mar 2022",
   role: "Product Developer",

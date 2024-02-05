@@ -13,9 +13,8 @@ import Experiences from "../data/experience.json"
 
     <section class="bg-background">
         <div class="px-8 mx-auto 2xl:max-w-7xl">
-            
-            <div class="flex flex-wrap">
-                {Experiences.map((template, index) => (
+            {Experiences.map((template, index) => (
+                <div class="flex flex-wrap" id={template.id}>
                     <div 
                     class="text-blue leading-relaxed pt-6 sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
                     data-aos="fade-up"
@@ -49,10 +48,8 @@ import Experiences from "../data/experience.json"
                     <>
                         {index !== Experiences.length - 1 ? <ThinDivider duration={2000}/> : null}
                     </>
-
-                ))}
-            </div>
-        
+                </div>
+            ))}
         </div>
     </section>
 
