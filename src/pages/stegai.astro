@@ -1,0 +1,309 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/landing/Header.astro";
+import Footer from "@/components/landing/Footer.astro";
+
+import ThinDivider from "@/components/ThinDivider.astro";
+
+---
+
+<BaseLayout>
+  <Header />
+
+    <section class="bg-background">
+        <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">
+            
+            <!-- OVERVIEW -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Steg.AI
+                    </h2>
+
+                    <p class="text-md">
+                        2023
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    Steg.AI is a B2B SaaS startup, in which their core product is invisible forensic watermarking on digital assets (like photos, videos, and PDFs) through their APIs or web application. My role in this project was both the designer and engineer to redesign and implement the web app's usage page.
+                </p>
+            </div>
+
+            <div 
+            class="space-y-6 lg:block"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]" 
+                src={"/usage-page-yearly-view-v2.svg"}/>
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]" 
+                src={"/usage-page-monthly-view-v2.svg"}/>
+            </div>
+
+            <!-- <div
+                class="w-full h-0.5 bg-blue" 
+                data-aos="fade-up"
+                data-aos-duration="2000">
+            </div> -->
+
+            <!-- <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[25%]" 
+                src={NoBalanceScreen.src}/>
+                <img
+                class="w-[25%]" 
+                src={AddFundsScreen.src}/>
+                <img
+                class="w-[25%]" 
+                src={LaundryStatusScreen.src}/>
+            </div> -->
+
+            <ThinDivider />
+
+            <!-- USER RESEARCH -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        User Research
+                    </h2>
+
+                    <p class="text-md">
+                        What are our customers' pain points & wants / needs?
+                    </p>
+                </div>
+
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    Through conversations and interviews with our customers to research their pain points and wants / needs, we found that they wanted to see their data beyond just a given month. Since a lot of our partnerships with large enterprises are based on annual contracts, they want to see a macro overview of their entire usage data. They also wanted to gain more valuable insight into how they're spending their tokens and who is spending otkens under an organization's account.
+                </p>
+            </div> 
+
+            <ThinDivider />
+
+            <!-- PROBLEM STATEMENT & GOAL -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Defining the Problem & Goal
+                    </h2>
+
+                    <p class="text-md">
+                        What exactly is the problem, and what are we trying to achieve for our customers?
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    From the user research, we can define the problem and our goal. Other than the clear visual design issues (such as inaccessible and incorrect use of the brand's colors), the usage page offered no valuable data insights for our cusomters with its limited capabilities. To fix this and provide a better experience, the goal is to elevate the usage insights through richer, interactive data visualizations and features, while incorporating more of the brand's styling.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                src={"/original-usage-page.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 1 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 01
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup. Some of the main features are: toggling between monthly and yearly views, displaying data visualizations to easily digest large and complex amounts of data, and viewing or downloading detailed logs of account activity. 
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]"
+                src={"/usage-page-yearly-view-v1.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 2 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 02
+                    </h2>
+                </div>
+            
+                <div 
+                class="text-blue text-base space-y-6 sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p>
+                        From stand ups with the team and weekly demos, I was able to get feedback to iterate over. In this version, users can easily upgrade their plans or tokens via a call-to-action link to remove friction in the upgrade process, filter even more of the data down to specific users in an organization's account, interact with the data visualizations through hover states, and see even more contextual details in the logs (specifically on who performed what action) with a better way to parse through the information using table pagination. 
+                    </p>
+
+                    <p>
+                        Something that I kept in mind was <span class="highlight highlight-orange">accessibility</span>, specifically around the combination of colors used for the first bar chart. Blue and green can be hard to differentiate for users with color blindness so I updated it to create a better contrast.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div 
+            class="space-y-6 lg:block"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]" 
+                src={"/usage-page-yearly-view-v2.svg"}/>
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]" 
+                src={"/usage-page-monthly-view-v2.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 3 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 03
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                     It's important to have information communicated to users whenever something goes wrong in order to avoid the user wondering if something happened, otherwise that creates confusion and overall a bad experience, so I consider what the different possible edge cases (like the error and loading states) and dropdown menus could look like.
+
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="ml-auto sm:w-full lg:w-[50%]"
+                src={"/usage-page-yearly-view-v3.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- FINAL RESULTS -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Final Results & Impact
+                    </h2>
+                </div>
+
+                <div 
+                class="text-blue text-base space-y-6 sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p>
+                        Overall, at a high level, I incorporated the brand’s colors and style guidelines, and incorporated our users’ feedback in creating visualizations that actually add insights for their usage data. I was also mindful to modularize the layout of the design and componentize elements so that it’d be more efficient when implementing it in code for quick iterations and in the future if features were removed or added. If I had more time, I would’ve liked to continue iterating on the designs, but given the timeline of the product roadmap and different constraints, this was enough for V2, which shows in the overall impact.
+                    </p>
+
+                    <p>
+                        One of the main principles I emphasize is the importance of data, and in this case, it’s a good way to quantifiably measure how well the redesigns did. To measure user impact, we used Pendo as our product analytics tool to capture user behavior and engagement metrics on the web app. We found that the average time spent on the usage page jumped up to 1m 29s, which is a <span class="highlight highlight-orange">345% increase</span>, and our PES (Product Engagement Score) improved to 79% as well, which is a <span class="highlight highlight-orange">7.36% increase</span>. The average time metric isn't an effective indicator by itself, but coupled with the increased PES, it's clear that our customers are engaging with the redesigned page more.
+                    </p>
+
+                    <p>
+                        Qualitatively, there was also impact within the team. Since the usage page was the first page that I redesigned in the overall project of revamping the entire web app, I saw this as an opportunity to <span class="highlight highlight-orange">establish the foundations for a design system</span> (color + typography guidelines, components, etc.). I also translated the guidelines from the design system into code for the frontend styling framework we were using as an engineering team. This really helped in fast iterations and overall implementation in code since we're a super small startup.
+                    </p>
+                </div>
+
+                <div 
+                class="flex flex-row justify-between items-start mt-6"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <img
+                    class="w-[30%]"
+                    src={"/usage-page-yearly-view-v2.svg"}/>
+                    <img
+                    class="w-[30%]"
+                    src={"/usage-page-monthly-view-v2.svg"}/>
+                    <img
+                    class="w-[30%]"
+                    src={"/usage-page-yearly-view-v3.svg"}/>
+                </div>
+
+            </div>
+
+            <!-- <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                src={AddFundsFlow.src}/>
+                <img
+                src={LaundryRoomFlow.src}/>
+            </div> -->
+
+
+        </div>
+    </section>
+
+    <Footer />
+
+</BaseLayout>

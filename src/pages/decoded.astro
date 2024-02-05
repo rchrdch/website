@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/landing/Header.astro";
+import Footer from "@/components/landing/Footer.astro";
+
+import ThinDivider from "@/components/ThinDivider.astro";
+
+---
+
+<BaseLayout>
+  <Header />
+
+    <section class="bg-background">
+        <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8">
+            
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue leading-relaxed sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                <h2 class="text-xl font-bold">
+                    Decoded 
+                </h2>
+
+                <p class="text-md">
+                    2021-2022
+                </p>
+
+                </div>
+            
+                <p 
+                class="text-blue text-base leading-relaxed sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    As a Product Developer at Decoded, I took on many design initiatives, such as creating these animations. I wanted to visually bring the brand 
+                    alive and engage with users' attentions to grow the brand's awareness, especially on social media platforms where team members and the company 
+                    account would utilize these assets for various social posts. 
+                </p>
+            </div>
+
+            <ThinDivider />
+
+            <div class="sm:columns-1 md:columns-2">
+                <img 
+                class="mb-4"
+                src={"/welcome.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+                <img 
+                class="mb-4"
+                src={"/api-blockchain.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+                <img 
+                class="mb-4"
+                src={"/hiring.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+                <img 
+                class="mb-4 w-full object-cover"
+                src={"/tweet.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+                <img 
+                class="mb-4"
+                src={"/slogan.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+                <img 
+                class="mb-4"
+                src={"/technical-topics.gif"}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                />
+            </div>
+            
+        </div>
+    </section>
+
+    <Footer />
+</BaseLayout>

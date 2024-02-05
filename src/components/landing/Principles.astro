@@ -1,0 +1,40 @@
+---
+import ThickDivider from "../ThickDivider.astro"
+import ThinDivider from "../ThinDivider.astro"
+import PrinciplesCard from "./PrinciplesCard.astro"
+---
+<section class="bg-background">
+  <div 
+    class="px-8 2xl:max-w-7xl mx-auto py-6"
+    data-aos="fade-up"
+    data-aos-duration="1500">
+
+    <div class="mt-6 space-y-2">
+      <ThinDivider />
+      <h3 class="text-blue text-base font-bold">
+        <span>Principles</span>
+      </h3>
+      <ThickDivider />
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 text-blue gap-6 py-5 mt-6">
+      <PrinciplesCard 
+        title="Learn By Doing + Owning" 
+        description="The best way to learn is to get your hands dirty, even if it means making mistakes."
+      />
+      <PrinciplesCard 
+        title="Create for the User" 
+        description="Empathizing and putting yourself in the shoes of the user creates great products."
+      />
+      <PrinciplesCard 
+        title="Diversity Produces Great Outcomes" 
+        description="Getting different perspectives, especially ones that challenge your own, help people and products grow."
+      />
+      <PrinciplesCard 
+        title="Data is the Oil that Powers the Digital Economy" 
+        description="Use data whenever possible to support your decision-making process."
+      />
+    </div>
+    
+  </div>
+</section>

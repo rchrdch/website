@@ -1,0 +1,374 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/landing/Header.astro";
+import Footer from "@/components/landing/Footer.astro";
+
+import ThinDivider from "@/components/ThinDivider.astro";
+
+---
+
+<BaseLayout>
+  <Header />
+
+    <section class="bg-background">
+        <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">
+            
+            <!-- OVERVIEW -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Hercules: Streamlining Laundry Management
+                    </h2>
+
+                    <p class="text-md">
+                        2024
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    Hercules is a laundry outsource company that provides end-to-end laundry room design, installation, management, and service to housing complexes, universities, etc. As a case study and personal design challenge, I redesigned the mobile app that allows users to digitally manage their laundry machines.
+                </p>
+            </div>
+
+            <!-- <div
+                class="w-full h-0.5 bg-blue" 
+                data-aos="fade-up"
+                data-aos-duration="2000">
+            </div> -->
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[25%]" 
+                src={"/no-balance-mockup.svg"}/>
+                <img
+                class="w-[25%]" 
+                src={"/add-funds-mockup.svg"}/>
+                <img
+                class="w-[25%]" 
+                src={"/laundry-status-mockup.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- USER RESEARCH -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        User Research
+                    </h2>
+
+                    <p class="text-md">
+                        What are our users' pain points & wants / needs?
+                    </p>
+                </div>
+            
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                    Conducting research with 10 users to gain initial insights, the main issues they're experiencing are paying for laundry and not knowing the status of their laundry, as shown through direct quotes:
+                    </p>
+                    
+                    <ul class="list-inside list-disc space-y-2">
+                        <li>“Card reloading machines sometimes can’t read my credit card, and laundry cards don’t work 100% of the time.”</li>
+                        <li>“Not knowing when laundry is done, needing to use quarters to pay, and fear of someone taking my laundry.”</li>
+                        <li>“The time it takes to do it and refilling my laundry card (the reloading machine only takes $10 or $20 bills so it’s very annoying).”</li>
+                        <li>“My laundry room is shared so I hate going there to find out all the machines are busy. When I go to get my laundry after I set a timer, sometimes the washer is still going and I have to either wait or go back to my apartment.”</li>
+                        <li>“I would love a cash balance mechanism.”</li>
+                        <li>“Ability to pay directly from the app with Apple Pay. I would also want features letting me know which number machine I am currently using and how much time I have.”</li>
+                        <li>“When next machine is available and what machines are available.”</li>
+                        <li>“To see how many machines are in use or free in my laundry room. Letting me know exactly when my machine is finishing.”</li>
+                        <li>“Digital queue for a specific machine, map of machines in a room, and real time updates of laundry.”</li>
+                    </ul>
+                </div>
+            </div> 
+
+            <ThinDivider />
+
+            <!-- PROBLEM STATEMENT & GOAL -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Defining the Problem & Goal
+                    </h2>
+
+                    <p class="text-md">
+                        What exactly is the problem, and what are we trying to achieve for our users?
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    From the user research, we can define the problem and our goal. While the app tries to digitize the laundry process, it lacks complete features that make it helpful for users, specifically around the payment process and laundry status capabilities, so the goal is to unify the app's visual design, but more importantly improve the user’s experience by streamlining the frustrating and time-consuming process of doing laundry.
+
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[20%] object-scale-down" 
+                src={"/hercules-home-screen.png"}/>
+                <img
+                class="w-[20%] object-scale-down" 
+                src={"/hercules-menu.png"}/>
+                <img
+                class="w-[20%] object-scale-down" 
+                src={"/hercules-maintenance-screen.png"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 1 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 01
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[20%]" 
+                src={"/home-screen-v1.svg"}/>
+                <img
+                class="w-[20%]" 
+                src={"/home-screen-v1.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 2 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 02
+                    </h2>
+                </div>
+            
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        I start to slightly evolve from the first iteration. I wanted the two main features of the app to emphasize the user’s account balance and the status of their active laundry, as outlined in my wireframe example. 
+                    </p>
+
+                    <p>
+                        Since the whole purpose of the app is to load money into a user’s account and pay for laundry machines, I figured it’d be interesting to treat the app’s design similarly to popular crypto/finance apps in the market. In these types of apps, you can see your account balance, check the statuses of your investments (or in this case, the status of your laundry), etc.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[18%]" 
+                src={"/no-balance-v2.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/positive-balance-v2.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/activity-screen-v2.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/service-screen-v2.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/account-screen-v2.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- ITERATION 3 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 03
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                     I start to ideate more flows for each of the screens' buttons and fine-tune more details. Before creating these mockups, I envisioned the different possible user journeys, returning to my inspiration + research phase and wireframing the different flows.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between space-y-6"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-full"
+                src={"/add-funds-flow-v3.svg"}/>
+                <img
+                class="w-[45%]"
+                src={"/activity-screen-flow-v3.svg"}/>
+                <img
+                class="w-[45%]"
+                src={"/service-screen-flow-v3.svg"}/>
+            </div>
+
+            <ThinDivider />
+
+            <!-- A/B TESTING -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        A/B Testing
+                    </h2>
+                </div>
+            
+                <div
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+
+                    <p class="mb-6">
+                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, with the loading and error states, 90% of users preferred the design with the popup modal because of reasons like:
+                    </p>
+                    <ul class="list-inside list-disc space-y-2 mb-6">
+                        <li>“Sometimes after refreshing the error can remain. It would allow me to know which click caused it.”</li>
+                        <li>"I like when an error message screen pops up, rather than some text that I might miss otherwise."</li>
+                        <li>"I like the visual design that it’s clear there is an error."</li>
+                    </ul>
+
+                    <p class="mb-6">
+                     Similarly, all users preferred the overlaid loading animation:
+                    </p>
+
+                    <ul class="list-inside list-disc space-y-2">
+                        <li>“It's more obvious.”</li>
+                        <li>"I know for sure that it's loading. I feel like some people might not catch onto the small loading icon next to the button."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <div class="flex flex-col w-[20%] items-center space-y-4">   
+                    <img
+                    src={"/failure-status-v1.svg"}/>
+                    <p>10%</p>
+                </div>
+                <div class="flex flex-col w-[20%] items-center space-y-4">
+                    <img
+                    src={"/failure-status-v2.svg"}/>
+                    <p>90%</p>
+                </div>
+
+                <div class="flex flex-col w-[20%] items-center space-y-4">
+                    <img
+                    src={"/loading-status-v1.svg"}/>
+                    <p>0%</p>
+                </div>
+                <div class="flex flex-col w-[20%] items-center space-y-4">
+                    <img
+                    src={"/loading-status-v2.svg"}/>
+                    <p>100%</p>
+                </div>
+            </div>
+
+            <ThinDivider />
+
+            <!-- FINAL RESULTS -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Final Results
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    In this iteration, I dive deeper specifically into the Add Funds flow, considering the different paths that a user may encounter when trying to add a new payment method or pay with the selected payment method. I also decoupled the screen for saving a new payment method and paying at the same time from the previous iteration, as I considered how this could be a minor nuisance for the user’s experience. I also begin exploring the Live Laundry Room Status flow.
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                src={"/add-funds-flow.png"}/>
+                <img
+                src={"/laundry-room-flow.png"}/>
+            </div>
+
+
+        </div>
+    </section>
+
+    <Footer />
+
+</BaseLayout>
