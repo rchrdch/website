@@ -14,19 +14,19 @@ const { number, name, description, callToActionText, link } = Astro.props;
 <li class="flow-root h-full" data-aos="fade-up" data-aos-duration="2000">
     <a href=`/${link}`>
         <div class="h-full flex flex-col justify-between">
-        <div>
-            <p
-                class="group-hover:text-blue/70 text-blue text-9xl font-black sm:-mb-20 sm:-translate-y-24 lg:-translate-y-12 lg:rotate-90 lg:-translate-x-16 lg:mb-2 xl:mb-0 xl:-translate-x-24 xl:-translate-y-4">
-                {number}
-            </p>
-            <p class="italic shrink-0">{name}</p>
-            <p class="text-base mt-3 leading-relaxed">{description}</p>
-        </div>
-        <div>
-            <p class="mt-3 text-base font-semibold hover:text-orange">
-            {callToActionText} &nbsp; ↗
-            </p>
-        </div>
+            <div>
+                <p
+                    class="group-hover:text-blue/70 text-blue text-9xl font-black -mb-20 -translate-y-24 lg:-translate-y-12 lg:rotate-90 lg:-translate-x-16 lg:mb-2 xl:mb-0 xl:-translate-x-24 xl:-translate-y-4">
+                    {number}
+                </p>
+                <p class="italic shrink-0">{name}</p>
+                <p class="text-base mt-3 leading-relaxed">{description}</p>
+            </div>
+            <div>
+                <p class="mt-3 mb-3 text-base font-semibold hover:text-orange md:mb-0">
+                {callToActionText} &nbsp; ↗
+                </p>
+            </div>
         </div>
     </a>
 </li>

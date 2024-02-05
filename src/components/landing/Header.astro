@@ -1,3 +1,7 @@
+---
+import ThinDivider from "../ThinDivider.astro"
+---
+
 <section class="bg-background">
   <div
     class="px-8 2xl:max-w-7xl mx-auto pt-12"
@@ -13,20 +17,20 @@
 
   <div class="px-8 2xl:max-w-7xl mx-auto pb-5">
     <div class="mt-6 space-y-2">
+      <ThinDivider duration={2000}/>
+
       <div
-        class="h-0.5 bg-blue"
+        class="flex flex-col sm:flex-row gap-3 justify-between sm:items-center"
         data-aos="fade-up"
         data-aos-duration="2000">
-      </div>
-      <div
-        class="flex flex-col sm:flex-row gap-3 justify-between items-center"
-        data-aos="fade-up"
-        data-aos-duration="2000">
+
         <div class="flex gap-3 items-center">
           <h3 class="text-blue text-xs font-medium">
             Full Stack Software Engineer
           </h3>
+
           <span class="h-auto border-blue border"></span>
+
           <h3 class="text-blue text-xs font-medium">
             Product Designer
           </h3>
