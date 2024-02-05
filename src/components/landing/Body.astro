@@ -1,10 +1,10 @@
 ---
-import ProjectPreviewCard from "../ProjectPreviewCard.astro";
+import ProjectPreviewCard from "./ProjectPreviewCard.astro";
 
 import ThinDivider from "../ThinDivider.astro";
 import ThickDivider from "../ThickDivider.astro";
 
-import Experience from "../../data/experience.json"
+import ExperiencesCards from "./ExperiencesCards.astro";
 ---
 
 <section class="bg-background">
@@ -29,6 +29,8 @@ import Experience from "../../data/experience.json"
     </a>
   </div>
 
+  <ExperiencesCards />
+
   <div class="px-8 2xl:max-w-7xl mx-auto py-6">
     <div class="space-y-2">
       <ThinDivider duration={2000}/>
@@ -50,21 +52,21 @@ import Experience from "../../data/experience.json"
         number="01." 
         name="Decoded" 
         description="A set of animations used for company accounts across social media platforms to increase brand awareness and growth." 
-        callToActionText="Check out the animations"
+        callToActionText="See the animations"
         link="decoded"
       />
       <ProjectPreviewCard 
         number="02." 
         name="Hercules" 
         description="A case study & personal design challenge to streamline digitized laundry management." 
-        callToActionText="Check out designs"
+        callToActionText="See the designs"
         link="hercules"
       />
       <ProjectPreviewCard 
         number="03." 
         name="Steg.AI" 
         description="A case study on the usage page of Steg.AI's web application." 
-        callToActionText="Check out the designs"
+        callToActionText="See the designs"
         link="stegai"
       />
       <!-- <ProjectPreviewCard 
@@ -74,46 +76,6 @@ import Experience from "../../data/experience.json"
         callToActionText="Check out the project"
         link="kowork"
       /> -->
-    </ul>
-  </div>
-
-  <div class="px-8 2xl:max-w-7xl mx-auto py-6">
-    <div class="space-y-2">
-      <ThinDivider duration={2000} />
-
-      <h3 
-      class="text-blue text-base font-bold"
-      data-aos="fade-up"
-      data-aos-duration="2000">
-        Experience
-      </h3>
-
-      <ThickDivider duration={2000}/>
-    </div>
-
-    <ul
-      class="mx-auto grid grid-cols-1 text-left divide-y-2 divide-background items-start text-background pt-5 sm:grid-cols-2 lg:grid-cols-4"
-      data-aos="fade-up"
-      data-aos-duration="2000">
-      {
-        Experience.map((template) => (
-          <>
-            <li class="flow-root col-span-full h-full hover:bg-transparent hover:text-blue bg-blue duration-200">
-              <a
-                href={template.url}
-                class="flex flex-col sm:flex-row justify-between gap-6 h-full ">
-                <div class="p-3">
-                  <p class="italic shrink-0">{template.company}</p>
-                </div>
-
-                <div class="p-3 ">
-                  <p class="text-base leading-relaxed">{template.role}</p>
-                </div>
-              </a>
-            </li>
-          </>
-        ))
-      }
     </ul>
   </div>
     

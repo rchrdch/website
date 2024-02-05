@@ -37,6 +37,23 @@ import ThinDivider from "@/components/ThinDivider.astro";
             </div>
 
             <div 
+            class="flex flex-row justify-between items-center mt-6"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[30%]"
+                src={"/usage-page-yearly-view-v2.svg"}/>
+                <img 
+                class="w-[25%]"
+                src={"/steg-logo.svg"}/>
+                <img
+                class="w-[30%]"
+                src={"/usage-page-monthly-view-v2.svg"}/>
+                
+            </div>
+
+            <!-- <div 
             class="space-y-6 lg:block"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -47,28 +64,6 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 <img
                 class="ml-auto sm:w-full lg:w-[50%]" 
                 src={"/usage-page-monthly-view-v2.svg"}/>
-            </div>
-
-            <!-- <div
-                class="w-full h-0.5 bg-blue" 
-                data-aos="fade-up"
-                data-aos-duration="2000">
-            </div> -->
-
-            <!-- <div 
-            class="flex flex-row justify-between"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            >
-                <img
-                class="w-[25%]" 
-                src={NoBalanceScreen.src}/>
-                <img
-                class="w-[25%]" 
-                src={AddFundsScreen.src}/>
-                <img
-                class="w-[25%]" 
-                src={LaundryStatusScreen.src}/>
             </div> -->
 
             <ThinDivider duration={2000}/>
@@ -93,7 +88,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    Through conversations and interviews with our customers to research their pain points and wants / needs, we found that they wanted to see their data beyond just a given month. Since a lot of our partnerships with large enterprises are based on annual contracts, they want to see a macro overview of their entire usage data. They also wanted to gain more valuable insight into how they're spending their tokens and who is spending otkens under an organization's account.
+                    Through conversations and interviews with our customers to research their pain points and wants / needs, we found that they wanted to see their data beyond just a given month. This makes sense since a lot of our partnerships with large enterprises are based on annual contracts so they want to see an overview of their entire usage data. They also wanted to gain more valuable insight into <span class="italic">how</span> they're spending their tokens and <span class="italic">who</span> is spending otkens under an organization's account.
                 </p>
             </div> 
 
@@ -224,7 +219,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                     It's important to have information communicated to users whenever something goes wrong in order to avoid the user wondering if something happened, otherwise that creates confusion and overall a bad experience, so I consider what the different possible edge cases (like the error and loading states) and dropdown menus could look like.
+                     It's important to have information communicated to users whenever something goes wrong in order to avoid confusion and frustration, otherwise that contributes to an overall bad experience, so I consideredd what the different possible edge cases (like the error and loading states) and dropdown menus could look like.
 
                 </p>
             </div>

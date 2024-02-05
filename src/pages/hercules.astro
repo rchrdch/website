@@ -48,14 +48,20 @@ import ThinDivider from "@/components/ThinDivider.astro";
             data-aos-duration="2000"
             >
                 <img
-                class="w-[25%]" 
-                src={"/no-balance-mockup.svg"}/>
+                class="w-[18%]" 
+                src={"/no-balance-v2.svg"}/>
                 <img
-                class="w-[25%]" 
-                src={"/add-funds-mockup.svg"}/>
+                class="w-[18%]" 
+                src={"/add-funds-screen.svg"}/>
                 <img
-                class="w-[25%]" 
-                src={"/laundry-status-mockup.svg"}/>
+                class="w-[18%]" 
+                src={"/activity-screen.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/service-screen-v3.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/account-screen.svg"}/>
             </div>
 
             <ThinDivider duration={2000}/>
@@ -81,7 +87,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                    Conducting research with 10 users to gain initial insights, the main issues they're experiencing are paying for laundry and not knowing the status of their laundry, as shown through direct quotes:
+                    Conducting research with 10 users to gain initial insights, the main issues they're experiencing are paying for laundry and not knowing the status of their laundry, as shown through their responses:
                     </p>
                     
                     <ul class="list-inside list-disc space-y-2">
@@ -159,7 +165,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app.
+                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app moving forward.
                 </p>
             </div>
 
@@ -195,11 +201,11 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                        I start to slightly evolve from the first iteration. I wanted the two main features of the app to emphasize the user’s account balance and the status of their active laundry, as outlined in my wireframe example. 
+                        I started to slightly evolve from the first iteration. I wanted the two main features of the app to emphasize the user’s account balance and the status of their active laundry, as outlined in my wireframe example. 
                     </p>
 
                     <p>
-                        Since the whole purpose of the app is to load money into a user’s account and pay for laundry machines, I figured it’d be interesting to treat the app’s design similarly to popular crypto/finance apps in the market. In these types of apps, you can see your account balance, check the statuses of your investments (or in this case, the status of your laundry), etc.
+                        Since the whole purpose of the app is to load money into a user’s account and pay for laundry machines, I figured it’d be interesting to treat the app’s design similarly to popular crypto / finance apps in the market. In these types of apps, you can see your account balance, check the statuses of your investments (or in this case, the status of your laundry), etc.
                     </p>
                 </div>
                 
@@ -245,7 +251,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                     I start to ideate more flows for each of the screens' buttons and fine-tune more details. Before creating these mockups, I envisioned the different possible user journeys, returning to my inspiration + research phase and wireframing the different flows.
+                     I start to ideate more flows for each of the different screens and fine-tune more details. Before creating these mockups, I envisioned the different possible user journeys, returning to my inspiration + research phase and wireframing the different flows.
                 </p>
             </div>
 
@@ -285,7 +291,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos-duration="2000">
 
                     <p class="mb-6">
-                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, with the loading and error states, 90% of users preferred the design with the popup modal because of reasons like:
+                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, with the loading and error states, 90% of users preferred the design with the modal indow because of reasons like:
                     </p>
                     <ul class="list-inside list-disc space-y-2 mb-6">
                         <li>“Sometimes after refreshing the error can remain. It would allow me to know which click caused it.”</li>
@@ -294,7 +300,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                     </ul>
 
                     <p class="mb-6">
-                     Similarly, all users preferred the overlaid loading animation:
+                     Similarly, all users preferred the overlaid loading animation because:
                     </p>
 
                     <ul class="list-inside list-disc space-y-2">
@@ -334,7 +340,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
 
             <ThinDivider duration={2000}/>
 
-            <!-- FINAL RESULTS -->
+            <!-- ITERATION 4 -->
             <div class="flex flex-wrap">
                 <div 
                 class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
@@ -342,15 +348,22 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos-duration="2000"
                 >
                     <h2 class="text-xl font-bold">
-                        Final Results
+                        Iteration 04
                     </h2>
                 </div>
-            
-                <p 
+
+                <div 
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    In this iteration, I dive deeper specifically into the Add Funds flow, considering the different paths that a user may encounter when trying to add a new payment method or pay with the selected payment method. I also decoupled the screen for saving a new payment method and paying at the same time from the previous iteration, as I considered how this could be a minor nuisance for the user’s experience. I also begin exploring the Live Laundry Room Status flow.
+                    <p class="mb-6">
+                        Expanding more on the previous flow to add funds, users had to pay with the card they were trying to save, but there are many cases in which this could be a pain point. To test this, I did quick A/B testing and found that my theory was correct as a majority of users preferred decoupling this, as it introduces friction when starting their laundry process.
+                    </p>
+
+                    <p>
+                        Moreover, when users try to start laundry, how do they know if any machines are even available? The next flow expands on the tiles feature I created to show a user’s active laundry status, in which users can see all machines in their laundry room mapped out with each one’s individual status as occupied or available. Users can also activate a reservation flow to hold a machine for up to 5 min before it’s relinquished and refunded. This avoids frustrating situations in which a machine gets taken during the time it takes for a user to see an available machine and physically go to the laundry room. To validate this feature, I asked the users what they thought in a follow-up question and they responded positively to this feature.
+                    </p>
+                </div>
             </div>
 
             <div 
@@ -364,6 +377,55 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 src={"/laundry-room-flow.png"}/>
             </div>
 
+            <ThinDivider duration={2000}/>
+
+            <!-- FINAL RESULTS -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Final Results & Impact
+                    </h2>
+                </div>
+
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        At a high level, I organized the features into logical categories and completed the main features / fleshed out more of the flows that users were experiencing as pain points. Now since this was just a side project, I wasn’t able to capture any real-life metrics; however, I asked users which design they’d prefer in the end and <span class="highlight highlight-orange">90%</span> preferred the redesign. 
+                    </p>
+
+                    <p>
+                        If this were to be launched, I’d like to iterate further with the designs and collect more user metrics / behaviors, as well as do more testing to validate that the redesigns are achieving our goal of ultimately elevating and streamlining the user’s experience.
+                    </p>
+                </div>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[18%]" 
+                src={"/no-balance-v2.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/add-funds-screen.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/activity-screen.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/service-screen-v3.svg"}/>
+                <img
+                class="w-[18%]" 
+                src={"/account-screen.svg"}/>
+            </div>
 
         </div>
     </section>

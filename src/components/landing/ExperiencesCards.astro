@@ -1,0 +1,46 @@
+---
+import ThinDivider from "../ThinDivider.astro"
+import ThickDivider from "../ThickDivider.astro"
+
+import Experience from "../../data/experience.json"
+---
+
+<div class="px-8 2xl:max-w-7xl mx-auto py-6">
+    <div class="space-y-2">
+      <ThinDivider duration={2000} />
+
+      <h3 
+      class="text-blue text-base font-bold"
+      data-aos="fade-up"
+      data-aos-duration="2000">
+        Experience
+      </h3>
+
+      <ThickDivider duration={2000}/>
+    </div>
+
+    <ul
+      class="mx-auto grid grid-cols-1 text-left divide-y-2 divide-background items-start text-background pt-5 sm:grid-cols-2 lg:grid-cols-4"
+      data-aos="fade-up"
+      data-aos-duration="2000">
+      {
+        Experience.map((template) => (
+          <>
+            <li class="flow-root col-span-full h-full hover:bg-transparent hover:text-blue bg-blue duration-200">
+              <a
+                href={template.url}
+                class="flex flex-col sm:flex-row justify-between gap-6 h-full ">
+                <div class="p-3">
+                  <p class="italic shrink-0">{template.company}</p>
+                </div>
+
+                <div class="p-3 ">
+                  <p class="text-base leading-relaxed">{template.role}</p>
+                </div>
+              </a>
+            </li>
+          </>
+        ))
+      }
+    </ul>
+  </div>
