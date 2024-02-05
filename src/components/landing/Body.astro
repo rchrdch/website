@@ -18,15 +18,25 @@ import ExperiencesCards from "./ExperiencesCards.astro";
       Skilled in full stack software engineering and product design & development. 
       Creative professional with a B.A. in Computer Science from Boston University. 
     </h2>
-    
-    <a href="/about">
-      <p 
-        class="mt-3 text-base text-blue font-semibold"
-        data-aos="fade-up"
-        data-aos-duration="2000">
-          Learn more about me &nbsp; ↗
-      </p>
-    </a>
+
+    <div 
+    class="flex space-x-6"
+    data-aos="fade-up"
+    data-aos-duration="2000">
+      <a href="/about">
+        <p 
+          class="mt-3 text-base text-blue font-semibold hover:text-orange">
+            Learn more about me &nbsp; ↗
+        </p>
+      </a>
+
+      <a href="/skills">
+        <p 
+          class="mt-3 text-base text-blue font-semibold hover:text-orange">
+            View my skills &nbsp; ↗
+        </p>
+      </a>
+    </div>
   </div>
 
   <ExperiencesCards />
@@ -51,7 +61,7 @@ import ExperiencesCards from "./ExperiencesCards.astro";
       <ProjectPreviewCard 
         number="01." 
         name="Decoded" 
-        description="A set of animations used for company accounts across social media platforms to increase brand awareness and growth." 
+        description="Animations created for company accounts to increase brand awareness and growth." 
         callToActionText="See the animations"
         link="decoded"
       />
