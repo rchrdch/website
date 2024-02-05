@@ -3,6 +3,7 @@ import ThickDivider from "../ThickDivider.astro"
 import ThinDivider from "../ThinDivider.astro"
 import PrinciplesCard from "./PrinciplesCard.astro"
 ---
+
 <section class="bg-background">
   <div 
     class="px-8 2xl:max-w-7xl mx-auto py-6"
@@ -10,11 +11,11 @@ import PrinciplesCard from "./PrinciplesCard.astro"
     data-aos-duration="1500">
 
     <div class="mt-6 space-y-2">
-      <ThinDivider />
+      <ThinDivider duration={2000}/>
       <h3 class="text-blue text-base font-bold">
         <span>Principles</span>
       </h3>
-      <ThickDivider />
+      <ThickDivider duration={2000}/>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-4 text-blue gap-6 py-5 mt-6">

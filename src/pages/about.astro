@@ -2,10 +2,56 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/landing/Header.astro";
 import Footer from "@/components/landing/Footer.astro";
-
 ---
 
 <BaseLayout>
   <Header />
+
+  <section class="bg-background">
+    <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">
+
+      <!-- OVERVIEW -->
+      <div class="flex flex-wrap">
+          <div 
+          class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          >
+              <h2 class="text-xl font-bold mb-6">
+                  Who am I?
+              </h2>
+
+              <img
+              class="w-[75%]"
+              src={"/headshot.jpeg"} />
+          </div>
+      
+          <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                    To begin with the basics:
+                    </p>
+                    
+                    <ul class="list-inside list-disc space-y-2 mb-6">
+                        <li>Boston University ‘21 alum with a B.A. in Computer Science</li>
+                        <li>Korean-American</li>
+                        <li>Born in Queens, NY (so I know what a good bagel tastes like) and raised in Central NJ (yes, it exists!)</li>
+                        <li>Cafe & coffee shop aficionado</li>
+                        <li>Skincare enthusiast</li>
+                        <li>Love learning new languages</li>
+                        <li>Astrological sign: Virgo</li>
+                        <li>Major proponent of the Oxford Comma</li>
+                    </ul>
+
+                    <p>
+                      As an individual with a creative mindset, I like to explore different ideas and possibilities. Paired with my extensive technical background, my goal is to create new designs, products, and solutions that are innovative and positively impact our everyday lives.
+                    </p>
+                </div>
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </BaseLayout>

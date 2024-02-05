@@ -1,5 +1,13 @@
+---
+interface Props {
+  duration: number,
+}
+
+const { duration } = Astro.props;
+---
+
 <div 
     class="h-1.5 bg-blue"
     data-aos="fade-up"
-    data-aos-duration="2000">
+    data-aos-duration={duration}>
 </div>
