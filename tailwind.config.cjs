@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         blue: "#1470AF",
         orange: "#EB8F50",
+        green: "#04724D",
+        red: "#A62639",
         background: "#EAEAEE",
       },
       fontFamily: {
