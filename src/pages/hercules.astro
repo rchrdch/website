@@ -24,6 +24,10 @@ import ThinDivider from "@/components/ThinDivider.astro";
                     </h2>
 
                     <p class="text-md">
+                        Designer
+                    </p>
+
+                    <p class="text-md">
                         2024
                     </p>
                 </div>
@@ -99,7 +103,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                     Conducting research with 10 users to gain initial insights, the main issues they were experiencing were paying for laundry and not knowing the status of their laundry, as shown through their responses:
                     </p>
                     
-                    <ul class="list-inside list-disc space-y-2">
+                    <ul class="list-outside pl-4 list-disc space-y-2">
                         <li>“Card reloading machines sometimes can't read my credit card, and laundry cards don't work 100% of the time.”</li>
                         <li>“Not knowing when laundry is done, needing to use quarters to pay, and fear of someone taking my laundry.”</li>
                         <li>“The time it takes to do it and refilling my laundry card (the reloading machine only takes $10 or $20 bills so it's very annoying).”</li>
@@ -127,7 +131,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                     </h2>
 
                     <p class="text-md">
-                        What exactly is the problem, and what are we trying to achieve for our users?
+                        What's the problem, and what are we trying to achieve for our users?
                     </p>
                 </div>
             
@@ -157,6 +161,57 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="w-[20%]" 
                 src={"/Hercules/original-design/service-screen.png"}
                 alt="Original service screen design"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- WIREFRAMES -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Inspiration & Wireframing
+                    </h2>
+                </div>
+
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        After defining the guidelines for this project, I begin the ideation phase in which I initially like to explore and research designs / components from other mockups and popular apps as examples to see what's working for users, get inspired and think of how I can begin sketching my designs, and help me stay up-to-date on design trends.
+                    </p>
+
+                    <p>
+                        Then, I like to mentally visualize what different parts of the app could look like and translate that into rough, low-fidelity sketches.
+                    </p>
+                </div>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[20%]" 
+                src={"/Hercules/wireframes/home-screen-sketch.png"}
+                alt="Home screen wireframe"/>
+                <img
+                class="w-[20%]" 
+                src={"/Hercules/wireframes/home-screen-sketch-2.png"}
+                alt="Home screen wireframe"/>
+                <img
+                class="w-[20%]" 
+                src={"/Hercules/wireframes/delete-account-screen.png"}
+                alt="Delete account screen wireframe"/>
+                <img
+                class="w-[20%]" 
+                src={"/Hercules/wireframes/laundry-room-screen.png"}
+                alt="Laundry room screen wireframe"/>
             </div>
 
             <ThinDivider duration={2000}/>
@@ -311,7 +366,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                     <p class="mb-6">
                      Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, with the loading and error states, 90% of users preferred the design with the modal window because of reasons like:
                     </p>
-                    <ul class="list-inside list-disc space-y-2 mb-6">
+                    <ul class="list-outside pl-4 list-disc space-y-2 mb-6">
                         <li>“Sometimes after refreshing the error can remain. It would allow me to know which click caused it.”</li>
                         <li>"I like when an error message screen pops up, rather than some text that I might miss otherwise."</li>
                         <li>"I like the visual design that it's clear there is an error."</li>
@@ -321,7 +376,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                      Similarly, all users preferred the overlaid loading animation because:
                     </p>
 
-                    <ul class="list-inside list-disc space-y-2">
+                    <ul class="list-outside pl-4 list-disc space-y-2">
                         <li>“It's more obvious.”</li>
                         <li>"I know for sure that it's loading. I feel like some people might not catch onto the small loading icon next to the button."</li>
                     </ul>
