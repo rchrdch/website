@@ -100,7 +100,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                    Conducting research with 10 users to gain initial insights, the main issues they were experiencing were paying for laundry and not knowing the status of their laundry, as shown through their responses:
+                    Conducting research with 10 users to gain initial insights, the main issues they were experiencing were paying for laundry and not knowing the status of their laundry, as shown through some of their responses:
                     </p>
                     
                     <ul class="list-outside pl-4 list-disc space-y-2">
@@ -232,7 +232,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app moving forward.
+                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app (specifically emphasizing the user's balance and dividing the menu options into logical categories) moving forward.
                 </p>
             </div>
 
@@ -270,7 +270,11 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                          Slightly evolving from the first mockups, I figured it'd be interesting to treat the app's design similarly to crypto / finance apps since the base purpose of the app is to load money into a user's account and pay for laundry machines. In these types of apps, you can see your account balance, check the statuses of your investments (or in this case the status of your laundry or maintenance requests via tiles), etc.
+                          Slightly evolving from the first mockup, I figured it'd be interesting to treat the app's design similarly to modern crypto apps since the base purpose of both apps is for users to load money into their accounts and pay for things. 
+                    </p>
+                    
+                    <p>
+                          For example, with crypto apps, users can add money to their accounts, see their account balance clearly, and check the statuses of their investments. For Hercules, users can also add money to their accounts, see their account balance clearly (through emphasis of the font size and red / green color, which cognitively helps them interpret this information faster than reading), and check the statuses of their laundry or maintenance requests (via modular tile components).
                     </p>
                 </div>
                 
@@ -364,7 +368,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos-duration="2000">
 
                     <p class="mb-6">
-                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, with the loading and error states, 90% of users preferred the design with the modal window because of reasons like:
+                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, for the error state, 90% of users preferred the design with the modal window because of reasons like:
                     </p>
                     <ul class="list-outside pl-4 list-disc space-y-2 mb-6">
                         <li>“Sometimes after refreshing the error can remain. It would allow me to know which click caused it.”</li>
@@ -434,11 +438,11 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                        Expanding more on the previous flow to add funds, users had to simultaneously pay with a card in order to save it, but there are many cases in which this could be a pain point. To test this, I did quick A/B testing and found that my theory was correct as the vast majority of users preferred decoupling this, as it introduces friction when starting their laundry process.
+                        Expanding more on the previous flow to add funds, users had to simultaneously pay with a card in order to save it, but there are many cases in which this could be a pain point. To test this, I did more A/B testing and found that my theory was correct as the vast majority of users preferred decoupling the two, as it introduces friction when starting their laundry process.
                     </p>
 
                     <p>
-                        Moreover, when users want to do laundry, how do they know if any machines are even available? The next flow expands on the tiles feature I created in previous iterations, in which users can see all machines in their laundry room mapped out with a status. Users can also activate a reservation flow to hold a machine for up to 5 min before it's relinquished and refunded. This avoids frustrating situations in which a machine gets taken during the time it takes for a user to see an available machine and physically go to the laundry room. Again, to validate this feature, I asked the users what they thought in a follow-up question and they all responded positively to this feature.
+                        Moreover, when users want to do laundry, how do they know if any machines are even available? The next flow expands on the tiles feature I created in previous iterations, in which users can see all machines in their laundry room mapped out and their statuses. Users can also activate a reservation flow to hold a machine for up to 5 min before it's relinquished and refunded. This avoids frustrating situations in which a machine gets taken during the time it takes a user to see an available machine and physically go to the laundry room. Again, to validate this feature, I asked the users what they thought in a follow-up question and they all responded positively to this feature.
                     </p>
                 </div>
             </div>
@@ -519,5 +523,4 @@ import ThinDivider from "@/components/ThinDivider.astro";
     </section>
 
     <Footer />
-
 </BaseLayout>
