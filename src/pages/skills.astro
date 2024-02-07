@@ -9,7 +9,13 @@ import SkillsList from "../data/skills.json"
 ---
 
 <BaseLayout>
-  <Header />
+  <Header 
+    title="Skills", 
+    description="Learn more about my technical and design skills.", 
+    ogTitle="Skills", 
+    ogType="website", 
+    ogImage="/favicons/favicon.ico"
+  />
 
     <section class="bg-background">
         <div class="px-8 mx-auto 2xl:max-w-7xl">
@@ -46,11 +52,7 @@ import SkillsList from "../data/skills.json"
                         <>
                             {
                                 index !== SkillsList.length - 1 ? 
-                                <div
-                                    class="w-full h-0.5 bg-blue" 
-                                    data-aos="fade-up"
-                                    data-aos-duration="2000">
-                                </div> : 
+                                <ThinDivider duration={2000} /> : 
                                 null
                             }
                         </>
