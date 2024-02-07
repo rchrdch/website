@@ -1,0 +1,497 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/landing/Header.astro";
+import Footer from "@/components/landing/Footer.astro";
+
+import ThinDivider from "@/components/ThinDivider.astro";
+---
+
+<BaseLayout>
+  <Header 
+    title="Kowork Designs", 
+    description="View my designs for Kowork, an app to connect people.", 
+    ogTitle="Kowork Designs", 
+    ogType="website", 
+    ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+  />
+
+    <section class="bg-background">
+        <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">
+            
+            <!-- OVERVIEW -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Kowork: Connecting People in Similar Industries
+                    </h2>
+
+                    <p class="text-md">
+                        Designer
+                    </p>
+
+                    <p class="text-md">
+                        2021
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    Kowork is a personal design project that I ideated in 2021. The vision behind Kowork is simple: to connect people, specifically those in remote work environments, with others in similar industries and fields in a fun and genuine way.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/signup-screen.png"}
+                alt="Redesign of the home screen (no balance)"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/login-screen.png"}
+                alt="Redesign of the payment screen"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/home-screen.png"}
+                alt="Live machine status feature"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/view-session.png"}
+                alt="Laundry status feature"/>      
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/explore-screen.png"}
+                alt="Maintenance request status feature"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/chat-screen.png"}
+                alt="Redesign of the account screen"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- WHY -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Why
+                    </h2>
+
+                    <p class="text-md">
+                        What's the purpose of Kowork?
+                    </p>
+                </div>
+                
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        The new age of remote working provides so many benefits, such as cost savings, flexibility, more freedom, and a lower carbon footprint! However, it can be hard to meet new people for (1) young professionals to socialize or network, and (2) students to find friends or form study groups. Physical offices, classrooms, and university common lounges were traditionally used as a common medium to facilitate this type of human interaction; however, with the rise of post-Covid remote culture, these spaces are slowly disappearing.
+                    </p>
+
+                    <p class="mb-6">
+                        How do we meet new people then? There are platforms out there, such as Bumble Friends/Business, but it takes the genuineness out of meeting new people through swiping and creating idealized online versions of ourselves. For example, “71% think that people lying to appear more desirable is a very common occurrence” (<a class="underline underline-offset-2" href="https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2020/02/PI_2020.02.06_online-dating_REPORT.pdf" target="_blank" rel="noopener noreferrer">Pew Research Center</a>). 
+                    </p>
+
+                    <p>
+                        This is where I hope Kowork can provide a solution. 
+                    </p>
+                </div>
+            </div>
+
+            <ThinDivider duration={2000} />
+
+            <!-- TARGET AUDIENCE -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Target Audience
+                    </h2>
+
+                    <p class="text-md">
+                        Who is Kowork for?
+                    </p>
+                </div>
+                
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p>
+                       The ideal target audience is young professionals and university students. I wanted the design of the app to not feel too serious / professional (like LinkedIn) but rather more social and fun. 
+                    </p>
+                </div>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- WIREFRAMING -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Wireframing
+                    </h2>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    I generally like to research designs to inspired first and then translate my ideas into low-fidelity wireframes to get a sense of the general layout of my designs. In these wireframes, I'm envisioning what the different base flows and screens could be structured as.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/signup-login/signup-login.png"}
+                alt="First iteration of the home screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/signup-login/signup-step-1.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/signup-login/signup-step-2.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/home-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/explore-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/chat-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v1/messages-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- ITERATION 1 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 01
+                    </h2>
+
+                    <p class="text-md">
+                        Building the signup / login flow
+                    </p>
+                </div>
+            
+                <p 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    Building upon the wireframes for the signup / login flows, I considered what the user journey should be and what basic information the app needs from the user to get onboarded quickly.
+                </p>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/welcome-screen.png"}
+                alt="First iteration of the home screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/welcome-screen-2.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/login-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/signup-screen.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/signup-screen-step-1.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/signup-screen-step-2.png"}
+                alt="First iteration of the help screen redesign"/>
+                <img
+                class="w-[13%]" 
+                src={"/Kowork/v2/signup-screen-step-3.png"}
+                alt="First iteration of the help screen redesign"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- ITERATION 2 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 02
+                    </h2>
+
+                    <p class="text-md">
+                        Iterating over the signup / login flow
+                    </p>
+                </div>
+            
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                          I iterated up this flow more by adding fun visuals created in Blender and cleaning up the colors of the app's theme to improve readability and visual accessibility.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/signup-login/login-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/signup-login/signup-screen.png"}
+                alt="Second iteration of the home screen redesign (positive balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/signup-login/signup-screen-step-1.png"}
+                alt="Second iteration of the activity screen redesign"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/signup-login/signup-screen-step-2.png"}
+                alt="Second iteration of the service screen redesign"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/signup-login/signup-screen-step-3.png"}
+                alt="Second iteration of the account screen redesign"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- ITERATION 3 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 03
+                    </h2>
+
+                    <p class="text-md">
+                        Fleshing out the main screens
+                    </p>
+                </div>
+            
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                          I then fleshed out more of the main screens from the initial wireframes, in which users can message friends and see, join, and explore active sessions. 
+                    </p>
+                </div>
+                
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/home-screen-1.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/home-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/explore-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/chat-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/messages-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+            </div>
+
+            <ThinDivider duration={2000}/>
+
+            <!-- ITERATION 4 -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Iteration 04
+                    </h2>
+
+                    <p class="text-md">
+                        Managing Kowork sessions
+                    </p>
+                </div>
+            
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                          But what do these sessions look like? Clicking on a session to join it opens a new screen with important details, such as where it's located, who created the session, what it's for, and the list of attendees.
+                    </p>
+                    
+                    <p>
+                          Moreover, the session owner has expanded capabilities to edit the aforementioned details and terminate the session. 
+                    </p>
+                </div>
+                
+            </div>
+
+            <div 
+            class="flex flex-row flex-wrap justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/new-session-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/invite-screen.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/view-session.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/session-chat.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+                <img
+                class="w-[18%]" 
+                src={"/Kowork/v3/view-session-as-owner.png"}
+                alt="Second iteration of the home screen redesign (no balance)"/>
+            </div>
+
+            <ThinDivider duration={2000} />
+
+            <!-- FINAL RESULTS -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Final Results & Impact
+                    </h2>
+                </div>
+
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        At a high level, I created an app design from scratch to solve a real world issue that many working professionals and students are experiencing. Since this was just a fun side project, I wasn't able to dedicate too much time to it nor was I able to capture any real-life metrics.
+                    </p>
+
+                    <p>
+                        However, if this were to be developed in code and launched, I'd like to iterate further with the designs, collect user metrics / behaviors, and conduct testing to validate the designs.
+                    </p>
+                </div>
+            </div>
+
+            <div 
+            class="flex flex-row justify-between"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            >
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/signup-screen.png"}
+                alt="Redesign of the home screen (no balance)"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/login-screen.png"}
+                alt="Redesign of the payment screen"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/home-screen.png"}
+                alt="Live machine status feature"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/view-session.png"}
+                alt="Laundry status feature"/>      
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/explore-screen.png"}
+                alt="Maintenance request status feature"/>
+                <img
+                class="w-[16%]" 
+                src={"/Kowork/final-results/chat-screen.png"}
+                alt="Redesign of the account screen"/>
+            </div>
+
+        </div>
+    </section>
+
+    <Footer />
+</BaseLayout>
