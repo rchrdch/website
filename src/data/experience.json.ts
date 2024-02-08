@@ -21,7 +21,7 @@ const stegAi: Template = {
     "Revamped the web app (React, JavaScript, Python), which interfaces with AI models, to optimize stability, speed, functionality, and clean code. Architected the customer onboarding (registration, login, billing, and usage) flow, enabling enhanced security protocols and increasing signup growth to over 40 users. Implemented and deployed endpoints utilizing cloud computing tools (like AWS Lambda, S3, and Cognito) to expand features and system interoperability. Modeled interactive data visualizations to display easily digestible information to users. Integrated Stripe's APIs to facilitate frictionless customer payments, invoices, and subscriptions. Executed data transformations to restructure user data in DynamoDB.",
 
     "Website:",
-    "Collaborated with Marketing & PR teams to develop conversion funnel features for the company's website, resulting in accelerated sales leads and over 50 inbound business inquiries. Maintained API documentation and created sample scripts for seamless API integration.",
+    "Collaborated with Marketing & PR teams to develop content and conversion funnel features for the company's website, resulting in accelerated sales leads and over 50 inbound business inquiries. Maintained API documentation and created sample scripts for seamless API integration.",
   ],
 };
 const strongarmTechnologies: Template = {

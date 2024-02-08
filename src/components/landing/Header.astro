@@ -8,9 +8,11 @@ interface Props {
   ogTitle: string,
   ogType: string,
   ogImage: string,
+  ogImageWidth: number,
+  ogImageHeight: number,
 }
 
-const { title, description, ogTitle, ogType, ogImage } = Astro.props;
+const { title, description, ogTitle, ogType, ogImage, ogImageWidth, ogImageHeight } = Astro.props;
 ---
 
 <SEO 
@@ -21,7 +23,11 @@ const { title, description, ogTitle, ogType, ogImage } = Astro.props;
       title: ogTitle,
       type: ogType,
       image: ogImage,
-    }
+    },
+    image: {
+      width: ogImageWidth,
+      height: ogImageHeight,
+    },
   }}
 />
 
