@@ -8,16 +8,16 @@ import ThinDivider from "@/components/ThinDivider.astro";
 import SkillsList from "../data/skills.json"
 ---
 
-<BaseLayout>
-  <Header 
-    title="Skills", 
-    description="Learn more about my technical and design skills.", 
-    ogTitle="Skills", 
-    ogType="website", 
-    ogImage="https://astro-website.s3.amazonaws.com/initials.png"
-    ogImageWidth={630}
-    ogImageHeight={630}
-  />
+<BaseLayout
+title="Skills", 
+description="Learn more about my technical and design skills.", 
+ogTitle="Skills", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+    <Header />
 
     <section class="bg-background">
         <div class="px-8 mx-auto 2xl:max-w-7xl">

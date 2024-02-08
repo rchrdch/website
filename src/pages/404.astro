@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+title="404", 
+description="404 error: Page not found.", 
+ogTitle="404", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+    <section class="flex h-screen px-8 bg-background items-center">
+        <div
+        class="flex flex-col w-fit m-auto space-y-8 text-blue leading-relaxed">
+
+            <div>
+                <p
+                class="text-7xl font-black mb-2">
+                    404.
+                </p>
+
+                <p
+                class="text-4xl font-semibold">
+                    That page wasn't found :(
+                </p>
+            </div>
+
+            <a href="/">
+                <p class="text-base font-semibold hover:text-orange">
+                    Return to home &nbsp; ↗
+                </p>
+            </a>
+        </div>
+
+    </section>
+</BaseLayout>

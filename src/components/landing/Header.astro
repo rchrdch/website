@@ -1,35 +1,6 @@
 ---
 import ThinDivider from "../ThinDivider.astro"
-import { SEO } from "astro-seo"
-
-interface Props {
-  title: string,
-  description: string,
-  ogTitle: string,
-  ogType: string,
-  ogImage: string,
-  ogImageWidth: number,
-  ogImageHeight: number,
-}
-
-const { title, description, ogTitle, ogType, ogImage, ogImageWidth, ogImageHeight } = Astro.props;
 ---
-
-<SEO 
-  title={title}
-  description={description}
-  openGraph={{
-    basic: {
-      title: ogTitle,
-      type: ogType,
-      image: ogImage,
-    },
-    image: {
-      width: ogImageWidth,
-      height: ogImageHeight,
-    },
-  }}
-/>
 
 <section class="bg-background">
   <div
@@ -140,5 +111,4 @@ const { title, description, ogTitle, ogType, ogImage, ogImageWidth, ogImageHeigh
       </div>
     </div>
   </div>
-  
 </section>

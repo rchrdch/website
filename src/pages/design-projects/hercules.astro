@@ -6,16 +6,16 @@ import Footer from "../../components/landing/Footer.astro";
 import ThinDivider from "../../components/ThinDivider.astro";
 ---
 
-<BaseLayout>
-  <Header 
-    title="Hercules Redesign Case Study", 
-    description="View my product design case study on improving users' experience of the Hercules app by streamlining the frustrating and time-consuming process of doing laundry", 
-    ogTitle="Hercules Redesign Case Study", 
-    ogType="website", 
-    ogImage="https://astro-website.s3.amazonaws.com/initials.png"
-    ogImageWidth={630}
-    ogImageHeight={630}
-  />
+<BaseLayout
+title="Hercules Redesign Case Study", 
+description="View my product design case study on improving users' experience of the Hercules app by streamlining the frustrating and time-consuming process of doing laundry", 
+ogTitle="Hercules Redesign Case Study", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+    <Header />
 
     <section class="bg-background">
         <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">
@@ -197,7 +197,7 @@ import ThinDivider from "../../components/ThinDivider.astro";
                         We already have an idea of the type of users for this app, but it's still good establish what kind of audience we're designing for to help guide our design direction. 
                     </p>
 
-                     <p>
+                        <p>
                         Apartment renters in housing complexes (especially in metropolitan cities) and university students living in dormitories are the primary users.
                     </p>
                 </div>
@@ -318,11 +318,11 @@ import ThinDivider from "../../components/ThinDivider.astro";
                 data-aos="fade-up"
                 data-aos-duration="2000">
                     <p class="mb-6">
-                          Slightly evolving from the first mockup, I figured it'd be interesting to treat the app's design similarly to modern crypto apps since the base purpose of both apps is for users to load money into their accounts and pay for things. 
+                            Slightly evolving from the first mockup, I figured it'd be interesting to treat the app's design similarly to modern crypto apps since the base purpose of both apps is for users to load money into their accounts and pay for things. 
                     </p>
                     
                     <p>
-                          For example, with crypto apps, users can add money to their accounts, see their account balance clearly, and check the statuses of their investments. For Hercules, users can also add money to their accounts, see their account balance clearly (through emphasis of the font size and red / green color, which cognitively helps them interpret this information faster than reading), and check the statuses of their laundry or maintenance requests (via modular tile components).
+                            For example, with crypto apps, users can add money to their accounts, see their account balance clearly, and check the statuses of their investments. For Hercules, users can also add money to their accounts, see their account balance clearly (through emphasis of the font size and red / green color, which cognitively helps them interpret this information faster than reading), and check the statuses of their laundry or maintenance requests (via modular tile components).
                     </p>
                 </div>
                 
@@ -377,7 +377,7 @@ import ThinDivider from "../../components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                     Building off of the previous iteration, I ideated more flows for each of the screens and fine-tuned more details for the different possible user journeys, such as this flow for adding more funds to a user's account.
+                        Building off of the previous iteration, I ideated more flows for each of the screens and fine-tuned more details for the different possible user journeys, such as this flow for adding more funds to a user's account.
                 </p>
             </div>
 
@@ -424,7 +424,7 @@ import ThinDivider from "../../components/ThinDivider.astro";
                 data-aos-duration="2000">
 
                     <p class="mb-6">
-                     Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, for the error state, 90% of users preferred the design with the modal window because of reasons like:
+                        Throughout designing, I did A/B testing with users to get feedback to iterate upon. For example, for the error state, 90% of users preferred the design with the modal window because of reasons like:
                     </p>
                     <ul class="list-outside pl-4 list-disc space-y-2 mb-6">
                         <li>“Sometimes after refreshing the error can remain. It would allow me to know which click caused it.”</li>
@@ -433,7 +433,7 @@ import ThinDivider from "../../components/ThinDivider.astro";
                     </ul>
 
                     <p class="mb-6">
-                     Similarly, all users preferred the overlaid loading animation because:
+                        Similarly, all users preferred the overlaid loading animation because:
                     </p>
 
                     <ul class="list-outside pl-4 list-disc space-y-2">

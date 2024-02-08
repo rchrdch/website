@@ -6,8 +6,7 @@ import Footer from "../../components/landing/Footer.astro";
 import ThinDivider from "../../components/ThinDivider.astro";
 ---
 
-<BaseLayout>
-  <Header 
+<BaseLayout
     title="Decoded", 
     description="View the animations I've created for Decoded.", 
     ogTitle="Decoded", 
@@ -15,7 +14,8 @@ import ThinDivider from "../../components/ThinDivider.astro";
     ogImage="https://astro-website.s3.amazonaws.com/initials.png"
     ogImageWidth={630}
     ogImageHeight={630}
-  />
+>
+    <Header />
 
     <section class="bg-background">
         <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8">

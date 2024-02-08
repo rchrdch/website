@@ -8,16 +8,16 @@ import ThinDivider from "@/components/ThinDivider.astro";
 import Experiences from "../data/experience.json"
 ---
 
-<BaseLayout>
-  <Header 
-    title="Experience", 
-    description="View and learn more about my professional work experiences.", 
-    ogTitle="Experience", 
-    ogType="website", 
-    ogImage="https://astro-website.s3.amazonaws.com/initials.png"
-    ogImageWidth={630}
-    ogImageHeight={630}
-  />
+<BaseLayout
+title="Experience", 
+description="View and learn more about my professional work experiences.", 
+ogTitle="Experience", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+    <Header />
 
     <section class="bg-background">
         <div class="px-8 mx-auto 2xl:max-w-7xl">

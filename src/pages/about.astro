@@ -4,16 +4,16 @@ import Header from "../components/landing/Header.astro";
 import Footer from "@/components/landing/Footer.astro";
 ---
 
-<BaseLayout>
-  <Header 
-    title="About", 
-    description="Learn more about me.", 
-    ogTitle="About", 
-    ogType="website", 
-    ogImage="https://astro-website.s3.amazonaws.com/headshot.png"
-    ogImageWidth={630}
-    ogImageHeight={630}
-  />
+<BaseLayout
+title="About", 
+description="Learn more about me.", 
+ogTitle="About", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/headshot.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+  <Header />
 
   <section class="bg-background">
     <div class="px-8 py-6 mx-auto 2xl:max-w-7xl space-y-8 leading-relaxed">

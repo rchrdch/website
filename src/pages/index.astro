@@ -7,17 +7,18 @@ import Footer from "../components/landing/Footer.astro";
 
 ---
 
-<BaseLayout>
-  <Header 
-    title="Home", 
-    description="Personal website and portfolio for Richard Cho, a full stack software engineer and product designer. Learn more about me, my work experiences, and designs.", 
-    ogTitle="Home", 
-    ogType="website", 
-    ogImage="https://astro-website.s3.amazonaws.com/initials.png"
-    ogImageWidth={630}
-    ogImageHeight={630}
-  />
+<BaseLayout
+title="Home", 
+description="Personal website and portfolio for Richard Cho, a full stack software engineer and product designer. Learn more about me, my work experiences, and designs.", 
+ogTitle="Home", 
+ogType="website", 
+ogImage="https://astro-website.s3.amazonaws.com/initials.png"
+ogImageWidth={630}
+ogImageHeight={630}>
+
+  <Header />
   <Body />
   <Principles />
   <Footer />
+  
 </BaseLayout>
