@@ -43,13 +43,28 @@ import Experiences from "../data/experience.json"
 
                     <div
                         class="space-y-4 pb-6 lg:py-6 sm:w-full lg:w-[50%]">
-                        {template.description.map((bullet) => (
-                            <p 
-                            class="text-blue text-base leading-relaxed "
-                            data-aos="fade-up"
-                            data-aos-duration="2000">
-                                {bullet}
-                            </p>
+                        {template.description.map((bullet, i) => (
+                            i % 2 === 0 ?
+                            (
+                                <p 
+                                class={i % 2 === 0 ? "text-blue text-base font-semibold leading-relaxed" : "text-blue text-base leading-relaxed"}
+                                data-aos="fade-up"
+                                data-aos-duration="2000">
+                                    {bullet}
+                                </p>
+                            ) :
+                            (
+                                bullet.split(".").filter(Boolean).map((sentence) => 
+                                    <ul 
+                                    class="list-outside pl-4 list-disc space-y-2 text-blue text-base leading-relaxed"
+                                    data-aos="fade-up"
+                                    data-aos-duration="2000">
+                                        <li>
+                                            {sentence.concat(".")}
+                                        </li>
+                                    </ul>
+                                )
+                            )
                         ))}
                     </div>
 
