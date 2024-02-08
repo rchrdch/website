@@ -35,7 +35,7 @@ const strongarmTechnologies: Template = {
     "Increased client usage of the web dashboard by 48% through developing new features on both the frontend (React & TypeScript) and backend (Python & Flask) codebase, improving the UI & UX, and conducting QA testing, while collaborating in a multidisciplinary, agile team of Product Managers, Designers, and Engineers.",
 
     "Data Visualizations:",
-    "Modeled actionable data visualizations using D3.js and queries from MySQL & ClickHouse databases to arrange complex data into easily understandable formats to clients and customers.",
+    "Modeled actionable data visualizations using D3 and queries from MySQL & ClickHouse databases to arrange complex data into easily understandable formats to clients and customers.",
 
     "Data Analytics:",
     "Spearheaded projects for integrating user and product analytics tools to capture client engagement metrics resulting in increased data-informed business decisions for stakeholders.",
