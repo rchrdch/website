@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/landing/Header.astro";
-import Footer from "@/components/landing/Footer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/landing/Header.astro";
+import Footer from "../../components/landing/Footer.astro";
 
-import ThinDivider from "@/components/ThinDivider.astro";
+import ThinDivider from "../../components/ThinDivider.astro";
 ---
 
 <BaseLayout>
@@ -135,6 +135,38 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 alt="Original design of the Usage page"/>
             </div>
 
+            <ThinDivider duration={2000} />
+
+            <!-- TARGET AUDIENCE -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Target Audience
+                    </h2>
+
+                    <p class="text-md">
+                        Who is our end user?
+                    </p>
+                </div>
+                
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        It's important to establish what kind of audience we're designing for to help guide our design direction. Since Steg is a B2B SaaS company, our primary target is large enterprises, which isn't a surprise.
+                    </p>
+
+                     <p>
+                        However, I've noticed that a lot of interested and potential customers were also smaller-scale companies/startups, as well as individuals looking to watermark their images so this was something that I was cognizant about.
+                    </p>
+                </div>
+            </div>
+
             <ThinDivider duration={2000}/>
 
             <!-- WIREFRAMING -->
@@ -204,7 +236,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup. Some of the main features are: toggling between monthly and yearly views, displaying data visualizations to easily digest large and complex amounts of data, and viewing or downloading detailed logs of account activity. 
+                    After wireframing and sketching potential ideas to establish more sense of the design direction, this was the outcome of the first high-fidelity mockup. Some of the main features are: toggling between monthly and yearly views, displaying data visualizations to easily digest large and complex amounts of data, and viewing or downloading detailed logs of account activity. 
                 </p>
             </div>
 

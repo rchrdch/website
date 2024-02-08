@@ -1,9 +1,9 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/landing/Header.astro";
-import Footer from "@/components/landing/Footer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/landing/Header.astro";
+import Footer from "../../components/landing/Footer.astro";
 
-import ThinDivider from "@/components/ThinDivider.astro";
+import ThinDivider from "../../components/ThinDivider.astro";
 ---
 
 <BaseLayout>
@@ -171,6 +171,38 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 alt="Original service screen design"/>
             </div>
 
+            <ThinDivider duration={2000} />
+
+            <!-- TARGET AUDIENCE -->
+            <div class="flex flex-wrap">
+                <div 
+                class="text-blue sm:w-full mb-6 lg:mb-0 lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                >
+                    <h2 class="text-xl font-bold">
+                        Target Audience
+                    </h2>
+
+                    <p class="text-md">
+                        Who is our end user?
+                    </p>
+                </div>
+                
+                <div 
+                class="text-blue text-base sm:w-full lg:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="2000">
+                    <p class="mb-6">
+                        We already have an idea of the type of users for this app, but it's still good establish what kind of audience we're designing for to help guide our design direction. 
+                    </p>
+
+                     <p>
+                        Apartment renters in housing complexes (especially in metropolitan cities) and university students living in dormitories are the primary users.
+                    </p>
+                </div>
+            </div>
+
             <ThinDivider duration={2000}/>
 
             <!-- WIREFRAMES -->
@@ -244,7 +276,7 @@ import ThinDivider from "@/components/ThinDivider.astro";
                 class="text-blue text-base sm:w-full lg:w-[50%]"
                 data-aos="fade-up"
                 data-aos-duration="2000">
-                    After wireframing and sketching potential ideas to establish some design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app (specifically emphasizing the user's balance and dividing the menu options into logical categories) moving forward.
+                    After wireframing and sketching potential ideas to establish more sense of the design direction, this was the outcome of the first high-fidelity mockup, which helped in defining the general layout and structure of the app (specifically emphasizing the user's balance and dividing the menu options into logical categories) moving forward.
                 </p>
             </div>
 
