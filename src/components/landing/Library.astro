@@ -1,0 +1,53 @@
+---
+import ThickDivider from "../ThickDivider.astro"
+import ThinDivider from "../ThinDivider.astro"
+import BookCard from "./BookCard.astro"
+---
+
+<section class="bg-background">
+  <div 
+    class="px-8 2xl:max-w-7xl mx-auto py-6"
+    >
+
+    <div class="space-y-2">
+      <ThickDivider duration={2000}/>
+
+      <h3 
+      class="text-blue text-base font-bold"
+      data-aos="fade-up"
+      data-aos-duration="2000">
+        <span>Current Reads</span>
+      </h3>
+
+      <ThinDivider duration={2000}/>
+    </div>
+
+    <div 
+    class="grid grid-cols-1 text-blue gap-6 pt-6 lg:grid-cols-4"
+    data-aos="fade-up"
+    data-aos-duration="2000">
+      <BookCard 
+        title="101 Things I Learned in Product Design School" 
+        author="Sung Jang, Martin Thaler, and Matthew Frederick"
+        image="/product_design_school_book.png"
+        alt="Book cover of '101 Things I Learned in Product Design School'"
+        link="https://www.barnesandnoble.com/w/101-things-i-learned-in-product-design-school-sung-jang/1137456962"
+      />
+      <BookCard 
+        title="Design is Storytelling" 
+        author="Ellen Lupton"
+        image="/design_is_storytelling_book.png"
+        alt="Book cover of 'Design is Storytelling'"
+        link="https://www.barnesandnoble.com/w/design-is-storytelling-ellen-lupton/1126081236"
+      />
+      <BookCard 
+        title="The Graphic Design Idea Book" 
+        author="Steven Heller and Gail Anderson"
+        image="/graphic_design_idea_book.png"
+        alt="Book cover of 'The Graphic Design Idea Book'"
+        link="https://www.barnesandnoble.com/w/the-graphic-design-idea-book-steven-heller/1122639572"
+      />
+    </div>
+    
+  </div>
+</section>

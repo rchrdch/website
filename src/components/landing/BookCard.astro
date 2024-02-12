@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string,
+  author: string,
+  image: string,
+  alt: string,
+  link: string,
+}
+
+const { title, author, image, alt, link } = Astro.props;
+---
+
+<div>
+  <a 
+  href={link}
+  target="_blank" 
+  rel="noopener noreferrer">
+
+    <img 
+    src={image}
+    alt={alt}
+    class="h-[350px] w-full object-fill mb-3"/>
+  </a>
+    
+    <p class="text-base leading-relaxed mb-2">
+      <span class="italic block font-bold">{title}</span>
+    </p>
+
+    <p class="text-base leading-relaxed">
+        {author}
+    </p>
+</div>
