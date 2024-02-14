@@ -46,7 +46,7 @@ const decoded: Template = {
   id: "decoded",
   company: "Decoded",
   year: "Jun 2021 - Mar 2022",
-  role: "Product Developer",
+  role: "Product Developer & Designer",
   description: [
     "Web Applications:",
     "Developed and scaled 2 Python web applications / 4 suites of products on various technical content (such as APIs, machine learning / AI, cybersecurity, crypto, blockchain, and data storytelling) in a cross-functionally collaborative team and in an agile, feedback-driven environment.",
