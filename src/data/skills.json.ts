@@ -5,7 +5,16 @@ export interface Template {
 
 const computerLanguages: Template = {
   category: "Computer Languages:",
-  skills: ["JavaScript", "Python", "TypeScript", "HTML", "CSS", "Java", "SQL"],
+  skills: [
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "HTML",
+    "CSS",
+    "Java",
+    "SQL",
+    "GraphQL",
+  ],
 };
 
 const frameworksAndLibraries: Template = {
@@ -16,6 +25,7 @@ const frameworksAndLibraries: Template = {
     "Tailwind",
     "Astro",
     "Flask",
+    "Django",
     "Recharts",
     "D3",
     "Dash",
@@ -35,6 +45,7 @@ const toolsAndSoftware: Template = {
     "Vercel",
     "Asana",
     "Jira",
+    "Confluence",
     "Notion",
     "Coda",
     "Loom",
@@ -44,6 +55,9 @@ const toolsAndSoftware: Template = {
     "MySQL Workbench",
     "Jupyter Notebook",
     "Audacity",
+    "Google Analytics",
+    "PostgreSQL",
+    "MongoDB",
   ],
 };
 
@@ -64,14 +78,7 @@ const designTools: Template = {
 
 const familiarity: Template = {
   category: "Familiarity With:",
-  skills: [
-    "Google Analytics",
-    "Vue.js",
-    "PostgreSQL",
-    "MongoDB",
-    "Swift",
-    "Xcode",
-  ],
+  skills: ["Vue.js", "Swift", "Xcode"],
 };
 
 const spokenLanguages: Template = {

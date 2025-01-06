@@ -7,18 +7,27 @@ export interface Template {
   year: string;
 }
 
+const vantageRisk: Template = {
+  url: "/experience#vantage-risk",
+  id: "vantage-risk",
+  company: "Vantage Risk",
+  year: "May 2024 - Current",
+  role: "Full Stack Software Engineer",
+  description: [],
+};
+
 const stegAi: Template = {
   url: "/experience#steg-ai",
   id: "steg-ai",
   company: "Steg.AI",
-  year: "Jan 2023 - Current",
+  year: "Jan 2023 - March 2024",
   role: "Full Stack Software Engineer & Product Designer",
   description: [
     "Product Design:",
-    "Spearheaded product design initiatives by using Figma and conducting user research to solve customers' pain points, create new features and user flows, elevate the UX, and ensure a unified design for all user-facing applications, resulting in increased user engagement metrics and establishment of a design system for faster iterations and implementation.",
+    "Increased user engagement metrics and established a design system for faster iterations and implementation by spearheading product design initiatives. Utilized Figma and leveraged data from user research/interviews to solve customers' pain points, create new features and user flows, elevate the UX, and ensure accessible and unified designs for user-facing applications.",
 
     "Web Application: ",
-    "Revamped the web app (React, JavaScript, Python), which interfaces with AI models, to optimize stability, speed, functionality, and clean code. Architected the customer onboarding (registration, login, billing, and usage) flow, enabling enhanced security protocols and increasing signup growth to over 40 non-enterprise users. Implemented and deployed endpoints utilizing cloud computing tools (like AWS Lambda, S3, and Cognito) to expand features and system interoperability. Modeled responsive and interactive data visualizations to display easily digestible information to users. Integrated Stripe's APIs to facilitate frictionless customer payments, invoices, and subscriptions. Executed data transformations to restructure data for over 100 users in multiple environments within DynamoDB.",
+    "Revamped the frontend and backend for the web app (React, JavaScript, Python), which interfaces with AI models, to optimize stability, speed, functionality, and clean code. Architected the customer onboarding (registration, login, billing, and usage) flow, enabling enhanced security protocols and increasing signup growth to over 40 non-enterprise users. Implemented and deployed endpoints utilizing cloud computing tools (like AWS Lambda, S3, and Cognito) to expand features and system interoperability. Modeled responsive and interactive data visualizations to display easily digestible information to users. Integrated Stripe's APIs to facilitate frictionless customer payments, invoices, and subscriptions. Executed data transformations to restructure data for over 100 users in multiple environments within DynamoDB.",
 
     "Website:",
     "Generated over 60 inbound business inquiries, improved SEO and performance, and accelerated sales leads by collaborating with Marketing & PR teams to develop content and conversion funnel features for the company's website. Maintained API documentation and created sample scripts for seamless API integration.",
@@ -46,7 +55,7 @@ const decoded: Template = {
   id: "decoded",
   company: "Decoded",
   year: "Jun 2021 - Mar 2022",
-  role: "Product Developer & Designer",
+  role: "Junior Product Developer",
   description: [
     "Web Applications:",
     "Developed and scaled 2 Python web applications and 4 suites of products on various technical content (such as APIs, machine learning / AI, cybersecurity, crypto, blockchain, and data storytelling) in a cross-functionally collaborative team and in an agile, feedback-driven environment.",
@@ -63,6 +72,7 @@ const decoded: Template = {
 };
 
 export const byName = {
+  vantageRisk,
   stegAi,
   strongarmTechnologies,
   decoded,
